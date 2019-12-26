@@ -1,0 +1,8 @@
+# ignore .idea folder
+.idea/
+
+.idea/workspace.xml
+
+*.class
+
+*.iml

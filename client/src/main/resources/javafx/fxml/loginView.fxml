@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="vb_scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.controllers.LoginViewController">
+   <children>
+      <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+      <HBox>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Text text="Zug Um Zug" styleClass="login-text">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Text>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <padding>
+            <Insets bottom="10.0" top="60.0" />
+         </padding>
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label text="Benutzer Name:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameText" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label text="Passwort:           ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordText" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="NEVER">
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" onAction="#registerAction" text="Registrieren">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Region prefHeight="31.0" prefWidth="117.0" HBox.hgrow="NEVER" />
+            <Button mnemonicParsing="false" onAction="#loginAction" text="Login">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="errorLabel" prefHeight="17.0" prefWidth="174.0" text=" " textFill="RED" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Region prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</VBox>

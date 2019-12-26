@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.controllers.ChatController">
+   <bottom>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="26.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="chatInput" alignment="BOTTOM_LEFT" onKeyPressed="#Enter" prefHeight="25.0" prefWidth="407.0" promptText="Sag was..." />
+            <Button fx:id="sendButton" mnemonicParsing="false" onAction="#sendButtonClicked" prefHeight="25.0" prefWidth="59.0" text="Senden" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <ScrollPane fx:id="chatScroll" prefHeight="330.0" prefWidth="284.0" BorderPane.alignment="CENTER">
+         <content>
+            <TextFlow fx:id="chatText" prefHeight="325.0" prefWidth="474.0" />
+         </content>
+      </ScrollPane>
+   </center>
+   <top>
+      <Label text="Chat" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

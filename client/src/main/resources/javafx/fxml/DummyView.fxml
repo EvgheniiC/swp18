@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="312.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.controllers.DummyViewController">
+    <children>
+        <Label fx:id="outputLabel" alignment="TOP_LEFT" layoutX="37.5" layoutY="21.0" prefHeight="176.0" prefWidth="470.0" style="-fx-border-color: rgb(223, 223, 223);" wrapText="true" />
+        <TextField fx:id="inputText" alignment="TOP_LEFT" layoutX="37.5" layoutY="226.0" prefHeight="50.0" prefWidth="361.0" />
+        <Button fx:id="sendButton" layoutX="414.0" layoutY="248.0" mnemonicParsing="false" onAction="#sendButtonClicked" prefHeight="27.0" prefWidth="95.0" text="Senden" />
+    </children>
+</AnchorPane>

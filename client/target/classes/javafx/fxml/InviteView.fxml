@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.controllers.InviteViewController">
+   <children>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="200.0" text="Einladung erhalten!" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <HBox prefHeight="30.0" prefWidth="350.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="30.0" prefWidth="75.0" text="Von:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="invitingPlayerLabel" contentDisplay="CENTER" prefHeight="30.0" prefWidth="265.0" text="InvitingPlayer" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="30.0" prefWidth="350.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="75.0" text="Zu:" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="invitedGameLabel" prefHeight="30.0" prefWidth="265.0" text="InvitedGame" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="350.0" spacing="50.0">
+         <children>
+            <Button fx:id="acceptButton" mnemonicParsing="false" onAction="#acceptClicked" prefHeight="25.0" prefWidth="125.0" text="Annehmen" />
+            <Button fx:id="declineButton" mnemonicParsing="false" onAction="#declineClicked" prefHeight="25.0" prefWidth="125.0" text="Ablehnen" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
